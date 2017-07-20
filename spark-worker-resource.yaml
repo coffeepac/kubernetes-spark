@@ -12,7 +12,7 @@ spec:
         name: spark-worker
     spec:
       containers:
-      - image: spark-2.1.0-bin-hadoop2.6 
+      - image: quay.io/coffeepac/kubernetes-spark:2.2.0 
         imagePullPolicy : "IfNotPresent"
         name: spark-worker
         ports:
