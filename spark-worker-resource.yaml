@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - image: quay.io/coffeepac/kubernetes-spark:2.2.0 
-        imagePullPolicy : "IfNotPresent"
+        imagePullPolicy : "Always"
         name: spark-worker
         ports:
         - containerPort: 7078
