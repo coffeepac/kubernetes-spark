@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name : spark-master
-        image: spark-2.1.0-bin-hadoop2.6 
-        imagePullPolicy: "IfNotPresent"
+        image: quay.io/coffeepac/kubernetes-spark:2.2.0
+        imagePullPolicy: "Always"
         name: spark-master
         ports:
         - containerPort: 7077
@@ -24,5 +24,5 @@ spec:
          - "-c"
          - "--"
         args :
-         - './start-master.sh ; sleep infinity'
+         - '/start-master.sh ; sleep infinity'
          
